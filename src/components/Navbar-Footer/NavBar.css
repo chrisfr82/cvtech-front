@@ -1,0 +1,33 @@
+header{
+    width: 100%;
+}
+.navbar{
+    background-color: #fff !important;
+    
+}
+img{
+    height: 100%;
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+}
+.nav-link{
+    background-color: #ff685f !important;
+    border-radius: 10px !important;
+    text-align: center !important;
+    color: #fff !important;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: none ;
+
+}
+.nav-item{
+    margin-left: 20px !important;
+    width: 204px !important;
+
+}
+.navbar-nav{
+    display: flex;
+    align-self: center;
+    width: auto;
+}

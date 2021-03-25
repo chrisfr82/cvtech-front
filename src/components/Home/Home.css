@@ -1,0 +1,21 @@
+.home{
+    background-image: url("../../assets/images/cover-FB-SUL-2021.jpg") !important ;
+    background-size: cover;
+    height: 600px;
+
+}
+.btn-candidature{
+    position: absolute;
+    background-color: #ff685f !important;
+    color: #fff;
+    border-radius: 25px !important;
+    text-align: center !important;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none ;
+    width: 30% !important;
+    height: 7%;
+    /*margin: 27% 43%*/
+    bottom: 38%;
+    left:42%;
+}
