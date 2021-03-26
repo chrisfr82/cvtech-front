@@ -5,6 +5,7 @@ import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
 import { register } from './../../actions/auth';
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from 'react-router-dom';
 import "./Candidature.css";
 
 const required = (value) => {
@@ -97,14 +98,25 @@ const Candidature =  () =>{
 
     return(
 
-        <div className="row rowform">
-            <div className="col-6 offset-3 formulaire">
-
+        
+            <div className="col-md-12  formulaire">
+              <div className="card card-container">
         <Form onSubmit={handleRegister} ref={form}>
           {!successful && (
-            <div>
+            <div className="divform">
               <div className="form-group">
-                <label htmlFor="username">Username</label>
+                <label htmlFor="username">Nom :</label>
+                <Input
+                  type="text"
+                  className="form-control"
+                  name="username"
+                  value={username}
+                  onChange={onChangeUsername}
+                  validations={[required, vusername]}
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="username">Prénom :</label>
                 <Input
                   type="text"
                   className="form-control"
@@ -128,7 +140,7 @@ const Candidature =  () =>{
               </div>
 
               <div className="form-group">
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">Téléphone</label>
                 <Input
                   type="password"
                   className="form-control"
@@ -138,11 +150,25 @@ const Candidature =  () =>{
                   validations={[required, vpassword]}
                 />
               </div>
-
               <div className="form-group">
-                <button className="btn btn-primary btn-block">Sign Up</button>
+                <label htmlFor="username">Votre Cv :</label>
+                <Input
+                  type="file"
+                  className="form-control"
+                  name="username"
+                  value={username}
+                  onChange={onChangeUsername}
+                  validations={[required, vusername]}
+                />
+              </div>
+              <div className="form-group">
+              <button type="submit" className="btn btn-envoiCandidature">
+                <Link>Envoyer Candidature</Link>
+              </button>
               </div>
             </div>
+
+            
           )}
 
           {message && (
@@ -154,10 +180,11 @@ const Candidature =  () =>{
           )}
           <CheckButton style={{ display: "none" }} ref={checkBtn} />
         </Form>
-            </div>
-            <div className="col-6"></div>
-
         </div>
+            </div>
+            
+
+        
     );
 };
 

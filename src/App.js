@@ -10,16 +10,12 @@ import Footer from "./components/Navbar-Footer/Footer";
 
 function App() {
   return (
-    <Router history={history}>
-      <div className="container">
+    <Router history={history}>   
         <NavBar />
-      </div>
-      <div className= "container-fluid">
         <Routes />
         <Footer />
-      </div>
     </Router>
   );
-}
+  };
 
 export default App;

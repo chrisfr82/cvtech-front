@@ -6,11 +6,14 @@ import './Home.css';
 const Home = () =>{
 
     return(
-        <div className = "row home">
-
-                <Link to={"/candidature"} className="btn btn-candidature">
+        <div className = "container home">
+            <div className ="page-header d-flex flex-column align-items-center text-center pt-5">
+                <h1 className="pt-5">Cvtech Bienvenue</h1>
+                <Link to={"/candidature"} className="btn btn-sm btn-candidature">
                 Deposer votre candidature
-                </Link>
+                </Link>      
+            </div>
+                
         </div>
     );
 };

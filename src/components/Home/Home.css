@@ -1,21 +1,24 @@
 .home{
-    background-image: url("../../assets/images/cover-FB-SUL-2021.jpg") !important ;
-    background-size: cover;
+    background-image: url("../../assets/images/cover-FB-SUL.jpg") !important ;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 600px;
 
 }
+h1{
+    margin-top: 10%;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: bolder;
+}
 .btn-candidature{
-    position: absolute;
+
     background-color: #ff685f !important;
-    color: #fff;
-    border-radius: 25px !important;
+    color: rgb(255, 255, 255);
+    border-radius: 10px !important;
     text-align: center !important;
     font-size: 1.5rem;
     font-weight: 400;
     text-decoration: none ;
-    width: 30% !important;
-    height: 7%;
-    /*margin: 27% 43%*/
-    bottom: 38%;
-    left:42%;
+    width: 35%;
 }

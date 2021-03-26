@@ -10,6 +10,7 @@ img{
     width: 140px;
     min-width: 140px;
     max-width: 140px;
+    margin-left: 50px;
 }
 .nav-link{
     background-color: #ff685f !important;
@@ -22,12 +23,7 @@ img{
 
 }
 .nav-item{
-    margin-left: 20px !important;
+    margin-right: 50px !important;
     width: 204px !important;
 
-}
-.navbar-nav{
-    display: flex;
-    align-self: center;
-    width: auto;
 }

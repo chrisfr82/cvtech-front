@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./NavBar.css";
-import logo from "../../assets/images/logo-EFFICOM.png";
+import logo from "../../assets/images/Logo-Sciences-u-Lille(RVB)-02.png";
 
 
 
 
 const NavBar = () =>{
     return(
-        <header>
           <nav className="navbar navbar-expand navbar-dark">
             <Link to={"/"} className="navbar-brand">
               <img src={logo} alt="logo" />
@@ -25,14 +24,13 @@ const NavBar = () =>{
                 </li>
   
                 <li className="nav-item">
-                  <Link to={"/register"} className="nav-link">
+                  <Link to={"/login"} className="nav-link">
                     Se connecter
                   </Link>
                 </li>
               </div>
             ){"}"}
           </nav>
-        </header>
     );
 };
 
